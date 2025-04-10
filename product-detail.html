@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Smart Affiliate Marketing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .product-image:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-500 text-lg">SmartAffiliate</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Home</a>
+                        <a href="products.html" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold">Clothing</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Shoes</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Cosmetics</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Technology</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="#" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Login</a>
+                    <a href="#" class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail -->
+    <div class="py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Product Images -->
+                <div class="md:w-1/2">
+                    <div class="bg-white rounded-lg shadow-md p-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Product" class="w-full h-96 object-contain product-image transition duration-300">
+                    </div>
+                    <div class="grid grid-cols-4 gap-2">
+                        <div class="border rounded-lg p-1 cursor-pointer">
+                            <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=60" alt="Thumbnail" class="w-full h-20 object-cover">
+                        </div>
+                        <div class="border rounded-lg p-1 cursor-pointer">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=60" alt="Thumbnail" class="w-full h-20 object-cover">
+                        </div>
+                        <div class="border rounded-lg p-1 cursor-pointer">
+                            <img src="https://images.unsplash.com/photo-1536766820879-059fec98ec0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=60" alt="Thumbnail" class="w-full h-20 object-cover">
+                        </div>
+                        <div class="border rounded-lg p-1 cursor-pointer">
+                            <img src="https://images.unsplash.com/photo-1527719327859-c6ce80353573?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=60" alt="Thumbnail" class="w-full h-20 object-cover">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="md:w-1/2">
+                    <h1 class="text-3xl font-bold mb-4">Men's Casual Shirt</h1>
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-600">(24 reviews)</span>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <span class="text-2xl font-bold text-green-500">$29.99</span>
+                        <span class="text-gray-500 line-through ml-2">$39.99</span>
+                        <span class="bg-red-100 text-red-800 text-sm font-semibold ml-2 px-2 py-1 rounded">25% OFF</span>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-semibold mb-2">Description</h3>
+                        <p class="text-gray-600">This comfortable casual shirt is perfect for everyday wear. Made from high-quality cotton blend fabric that's breathable and soft to the touch. Features a classic fit with button-down collar and chest pocket. Available in multiple colors and sizes.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-semibold mb-2">Features</h3>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>100% Cotton</li>
+                            <li>Machine washable</li>
+                            <li>Button-down collar</li>
+                            <li>Chest pocket</li>
+                            <li>Classic fit</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-semibold mb-2">Size</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <button class="border rounded-lg px-4 py-2 hover:bg-gray-100 focus:bg-green-500 focus:text-white">S</button>
+                            <button class="border rounded-lg px-4 py-2 hover:bg-gray-100 focus:bg-green-500 focus:text-white">M</button>
+                            <button class="border rounded-lg px-4 py-2 hover:bg-gray-100 focus:bg-green-500 focus:text-white">L</button>
+                            <button class="border rounded-lg px-4 py-2 hover:bg-gray-100 focus:bg-green-500 focus:text-white">XL</button>
+                            <button class="border rounded-lg px-4 py-2 hover:bg-gray-100 focus:bg-green-500 focus:text-white">XXL</button>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-semibold mb-2">Color</h3>
+                        <div class="flex gap-2">
+                            <button class="w-8 h-8 rounded-full bg-blue-500 border-2 border-gray-300 focus:border-green-500"></button>
+                            <button class="w-8 h-8 rounded-full bg-gray-500 border-2 border-gray-300 focus:border-green-500"></button>
+                            <button class="w-8 h-8 rounded-full bg-green-500 border-2 border-gray-300 focus:border-green-500"></button>
+                            <button class="w-8 h-8 rounded-full bg-red-500 border-2 border-gray-300 focus:border-green-500"></button>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4 mb-8">
+                        <div class="flex items-center border rounded-lg overflow-hidden">
+                            <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200">-</button>
+                            <span class="px-4 py-2">1</span>
+                            <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200">+</button>
+                        </div>
+                        <button class="flex-1 bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition duration-300">
+                            <i class="fas fa-shopping-cart mr-2"></i> Add to Cart
+                        </button>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-semibold mb-2">Affiliate Link</h3>
+                        <div class="flex">
+                            <input type="text" value="https://example.com/buy/12345" class="flex-1 border rounded-l-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" readonly>
+                            <button class="bg-green-500 text-white px-4 py-2 rounded-r-lg hover:bg-green-600 transition duration-300">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Tabs -->
+            <div class="mt-12">
+                <div class="border-b border-gray-200">
+                    <nav class="flex -mb-px">
+                        <button class="mr-8 py-4 px-1 border-b-2 border-green-500 font-medium text-green-500">Description</button>
+                        <button class="mr-8 py-4 px-1 border-b-2 border-transparent font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">Reviews (24)</button>
+                        <button class="mr-8 py-4 px-1 border-b-2 border-transparent font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">Shipping</button>
+                        <button class="py-4 px-1 border-b-2 border-transparent font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">Returns</button>
+                    </nav>
+                </div>
+                
+                <div class="py-6">
+                    <h3 class="font-semibold mb-4">Product Details</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-medium mb-2">Material & Care</h4>
+                            <ul class="list-disc list-inside text-gray-600">
+                                <li>100% Cotton</li>
+                                <li>Machine wash cold</li>
+                                <li>Tumble dry low</li>
+                                <li>Iron low heat</li>
+                                <li>Do not bleach</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-medium mb-2">Specifications</h4>
+                            <ul class="list-disc list-inside text-gray-600">
+                                <li>Classic fit</li>
+                                <li>Button-down collar</li>
+                                <li>Chest pocket</li>
+                                <li>Button front</li>
+                                <li>Long sleeves</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Related Products -->
+            <div class="mt-12">
+                <h2 class="text-2xl font-bold mb-6">You May Also Like</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                        <a href="product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1527719327859-c6ce80353573?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Related Product" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-semibold text-lg mb-2">Women's Summer Dress</h3>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold text-green-500">$49.99</span>
+                                    <span class="text-gray-500 text-sm line-through">$59.99</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                        <a href="product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1536766820879-059fec98ec0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Related Product" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-semibold text-lg mb-2">Men's Formal Shirt</h3>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold text-green-500">$39.99</span>
+                                    <span class="text-gray-500 text-sm line-through">$49.99</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                        <a href="product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Related Product" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-semibold text-lg mb-2">Kids T-Shirt Set</h3>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold text-green-500">$24.99</span>
+                                    <span class="text-gray-500 text-sm line-through">$34.99</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                        <a href="product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Related Product" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-semibold text-lg mb-2">Men's Casual Shirt</h3>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold text-green-500">$29.99</span>
+                                    <span class="text-gray-500 text-sm line-through">$39.99</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chatbot Interface (same as index.html) -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <div id="chatbot-container" class="hidden w-80 h-96 bg-white rounded-lg shadow-xl flex flex-col">
+            <div class="bg-green-500 text-white p-4 rounded-t-lg flex justify-between items-center">
+                <h3 class="font-bold">AI Shopping Assistant</h3>
+                <button id="close-chatbot" class="text-white hover:text-gray-200">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="chat-messages" class="flex-1 p-4 overflow-y-auto">
+                <div class="mb-4">
+                    <div class="bg-gray-100 rounded-lg p-3 max-w-xs">
+                        <p class="text-sm">Hello! I can help you with any questions about this product.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 border-t">
+                <div class="flex">
+                    <input type="text" id="chat-input" placeholder="Ask about this product..." class="flex-1 border rounded-l-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <button id="send-message" class="bg-green-500 text-white px-4 py-2 rounded-r-lg hover:bg-green-600 transition duration-300">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button id="chatbot-toggle" class="bg-green-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition duration-300">
+            <i class="fas fa-robot text-2xl"></i>
+        </button>
+    </div>
+
+    <script>
+        // Chatbot toggle functionality
+        const chatbotToggle = document.getElementById('chatbot-toggle');
+        const chatbotContainer = document.getElementById('chatbot-container');
+        const closeChatbot = document.getElementById('close-chatbot');
+        
+        chatbotToggle.addEventListener('click', () => {
+            chatbotContainer.classList.toggle('hidden');
+        });
+        
+        closeChatbot.addEventListener('click', () => {
+            chatbotContainer.classList.add('hidden');
+        });
+
+        // Simple chatbot functionality
+        const chatInput = document.getElementById('chat-input');
+        const sendMessage = document.getElementById('send-message');
+        const chatMessages = document.getElementById('chat-messages');
+
+        sendMessage.addEventListener('click', () => {
+            const message = chatInput.value.trim();
+            if (message) {
+                // Add user message
+                addMessage(message, 'user');
+                chatInput.value = '';
+                
+                // Simulate AI response
+                setTimeout(() => {
+                    addMessage("I can provide more details about this shirt. In a full implementation, I would connect to our product database to answer specific questions about materials, sizing, and care instructions.", 'ai');
+                }, 1000);
+            }
+        });
+
+        function addMessage(text, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('mb-4');
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.classList.add('rounded-lg', 'p-3', 'max-w-xs');
+            
+            if (sender === 'user') {
+                contentDiv.classList.add('bg-green-500', 'text-white', 'ml-auto');
+            } else {
+                contentDiv.classList.add('bg-gray-100');
+            }
+            
+            contentDiv.innerHTML = `<p class="text-sm">${text}</p>`;
+            messageDiv.appendChild(contentDiv);
+            chatMessages.appendChild(messageDiv);
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+    </script>
+</body>
+</html>
