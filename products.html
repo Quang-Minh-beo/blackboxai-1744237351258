@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Smart Affiliate Marketing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-500 text-lg">SmartAffiliate</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Home</a>
+                        <a href="products.html" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold">Clothing</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Shoes</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Cosmetics</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Technology</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="#" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Login</a>
+                    <a href="#" class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <div class="py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <!-- Filters -->
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+                <h1 class="text-2xl font-bold mb-4 md:mb-0">Clothing Collection</h1>
+                <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+                    <div class="relative">
+                        <select class="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-green-500">
+                            <option>Sort by: Featured</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Newest Arrivals</option>
+                            <option>Best Rated</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <select class="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-green-500">
+                            <option>Filter by: All</option>
+                            <option>Men</option>
+                            <option>Women</option>
+                            <option>Kids</option>
+                            <option>Accessories</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300">
+                    <div class="relative">
+                        <a href="product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Product" class="w-full h-48 object-cover">
+                        </a>
+                        <div class="absolute top-2 right-2">
+                            <button class="bg-white rounded-full p-2 shadow-md hover:bg-gray-100 transition duration-300">
+                                <i class="far fa-heart text-gray-500"></i>
+                            </button>
+                        </div>
+                        <div class="absolute bottom-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+                            25% OFF
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <a href="product-detail.html" class="font-semibold text-lg mb-2 hover:text-green-500 transition duration-300">Men's Casual Shirt</a>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm">(24)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-green-500">$29.99</span>
+                                <span class="text-gray-500 text-sm line-through ml-1">$39.99</span>
+                            </div>
+                            <button class="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition duration-300">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <div class="mt-3">
+                            <button class="w-full bg-gray-100 text-gray-700 py-2 px-4 rounded hover:bg-gray-200 transition duration-300 text-sm">
+                                <i class="fas fa-link mr-1"></i> Get Affiliate Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300">
+                    <div class="relative">
+                        <a href="product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1536766820879-059fec98ec0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Product" class="w-full h-48 object-cover">
+                        </a>
+                        <div class="absolute top-2 right-2">
+                            <button class="bg-white rounded-full p-2 shadow-md hover:bg-gray-100 transition duration-300">
+                                <i class="far fa-heart text-gray-500"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <a href="product-detail.html" class="font-semibold text-lg mb-2 hover:text-green-500 transition duration-300">Men's Formal Shirt</a>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm">(18)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-green-500">$39.99</span>
+                                <span class="text-gray-500 text-sm line-through ml-1">$49.99</span>
+                            </div>
+                            <button class="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition duration-300">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <div class="mt-3">
+                            <button class="w-full bg-gray-100 text-gray-700 py-2 px-4 rounded hover:bg-gray-200 transition duration-300 text-sm">
+                                <i class="fas fa-link mr-1"></i> Get Affiliate Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300">
+                    <div class="relative">
+                        <a href="product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1527719327859-c6ce80353573?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Product" class="w-full h-48 object-cover">
+                        </a>
+                        <div class="absolute top-2 right-2">
+                            <button class="bg-white rounded-full p-2 shadow-md hover:bg-gray-100 transition duration-300">
+                                <i class="far fa-heart text-gray-500"></i>
+                            </button>
+                        </div>
+                        <div class="absolute bottom-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+                            15% OFF
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <a href="product-detail.html" class="font-semibold text-lg mb-2 hover:text-green-500 transition duration-300">Women's Summer Dress</a>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm">(32)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-green-500">$49.99</span>
+                                <span class="text-gray-500 text-sm line-through ml-1">$59.99</span>
+                            </div>
+                            <button class="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition duration-300">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <div class="mt-3">
+                            <button class="w-full bg-gray-100 text-gray-700 py-2 px-4 rounded hover:bg-gray-200 transition duration-300 text-sm">
+                                <i class="fas fa-link mr-1"></i> Get Affiliate Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300">
+                    <div class="relative">
+                        <a href="product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Product" class="w-full h-48 object-cover">
+                        </a>
+                        <div class="absolute top-2 right-2">
+                            <button class="bg-white rounded-full p-2 shadow-md hover:bg-gray-100 transition duration-300">
+                                <i class="far fa-heart text-gray-500"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <a href="product-detail.html" class="font-semibold text-lg mb-2 hover:text-green-500 transition duration-300">Kids T-Shirt Set</a>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm">(12)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-green-500">$24.99</span>
+                                <span class="text-gray-500 text-sm line-through ml-1">$34.99</span>
+                            </div>
+                            <button class="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition duration-300">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <div class="mt-3">
+                            <button class="w-full bg-gray-100 text-gray-700 py-2 px-4 rounded hover:bg-gray-200 transition duration-300 text-sm">
+                                <i class="fas fa-link mr-1"></i> Get Affiliate Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300">
+                    <div class="relative">
+                        <a href="product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Product" class="w-full h-48 object-cover">
+                        </a>
+                        <div class="absolute top-2 right-2">
+                            <button class="bg-white rounded-full p-2 shadow-md hover:bg-gray-100 transition duration-300">
+                                <i class="far fa-heart text-gray-500"></i>
+                            </button>
+                        </div>
+                        <div class="absolute bottom-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+                            30% OFF
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <a href="product-detail.html" class="font-semibold text-lg mb-2 hover:text-green-500 transition duration-300">Women's Jeans</a>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm">(45)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-green-500">$34.99</span>
+                                <span class="text-gray-500 text-sm line-through ml-1">$49.99</span>
+                            </div>
+                            <button class="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition duration-300">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <div class="mt-3">
+                            <button class="w-full bg-gray-100 text-gray-700 py-2 px-4 rounded hover:bg-gray-200 transition duration-300 text-sm">
+                                <i class="fas fa-link mr-1"></i> Get Affiliate Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300">
+                    <div class="relative">
+                        <a href="product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Product" class="w-full h-48 object-cover">
+                        </a>
+                        <div class="absolute top-2 right-2">
+                            <button class="bg-white rounded-full p-2 shadow-md hover:bg-gray-100 transition duration-300">
+                                <i class="far fa-heart text-gray-500"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <a href="product-detail.html" class="font-semibold text-lg mb-2 hover:text-green-500 transition duration-300">Men's Watch</a>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm">(28)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-green-500">$89.99</span>
+                                <span class="text-gray-500 text-sm line-through ml-1">$99.99</span>
+                            </div>
+                            <button class="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition duration-300">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <div class="mt-3">
+                            <button class="w-full bg-gray-100 text-gray-700 py-2 px-4 rounded hover:bg-gray-200 transition duration-300 text-sm">
+                                <i class="fas fa-link mr-1"></i> Get Affiliate Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300">
+                    <div class="relative">
+                        <a href="product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Product" class="w-full h-48 object-cover">
+                        </a>
+                        <div class="absolute top-2 right-2">
+                            <button class="bg-white rounded-full p-2 shadow-md hover:bg-gray-100 transition duration-300">
+                                <i class="far fa-heart text-gray-500"></i>
+                            </button>
+                        </div>
+                        <div class="absolute bottom-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+                            20% OFF
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <a href="product-detail.html" class="font-semibold text-lg mb-2 hover:text-green-500 transition duration-300">Wireless Headphones</a>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm">(56)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-green-500">$79.99</span>
+                                <span class="text-gray-500 text-sm line-through ml-1">$99.99</span>
+                            </div>
+                            <button class="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition duration-300">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <div class="mt-3">
+                            <button class="w-full bg-gray-100 text-gray-700 py-2 px-4 rounded hover:bg-gray-200 transition duration-300 text-sm">
+                                <i class="fas fa-link mr-1"></i> Get Affiliate Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300">
+                    <div class="relative">
+                        <a href="product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Product" class="w-full h-48 object-cover">
+                        </a>
+                        <div class="absolute top-2 right-2">
+                            <button class="bg-white rounded-full p-2 shadow-md hover:bg-gray-100 transition duration-300">
+                                <i class="far fa-heart text-gray-500"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <a href="product-detail.html" class="font-semibold text-lg mb-2 hover:text-green-500 transition duration-300">Smart Watch</a>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm">(38)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-green-500">$129.99</span>
+                                <span class="text-gray-500 text-sm line-through ml-1">$149.99</span>
+                            </div>
+                            <button class="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition duration-300">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <div class="mt-3">
+                            <button class="w-full bg-gray-100 text-gray-700 py-2 px-4 rounded hover:bg-gray-200 transition duration-300 text-sm">
+                                <i class="fas fa-link mr-1"></i> Get Affiliate Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="mt-12 flex justify-center">
+                <nav class="flex items-center space-x-2">
+                    <button class="px-3 py-1 rounded border bg-white text-gray-500 hover:bg-gray-100 transition duration-300">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="px-3 py-1 rounded border bg-green-500 text-white">1</button>
+                    <button class="px-3 py-1 rounded border bg-white text-gray-500 hover:bg-gray-100 transition duration-300">2</button>
+                    <button class="px-3 py-1 rounded border bg-white text-gray-500 hover:bg-gray-100 transition duration-300">3</button>
+                    <button class="px-3 py-1 rounded border bg-white text-gray-500 hover:bg-gray-100 transition duration-300">4</button>
+                    <button class="px-3 py-1 rounded border bg-white text-gray-500 hover:bg-gray-100 transition duration-300">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">SmartAffiliate</h3>
+                    <p class="text-gray-400">The best affiliate marketing platform to help you earn money by promoting quality products.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Products</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Categories</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Clothing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Shoes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Cosmetics</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Technology</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="flex-1 bg-gray-700 text-white px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        <button class="bg-green-500 text-white px-4 py-2 rounded-r-lg hover:bg-green-600 transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 SmartAffiliate. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot Interface -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <div id="chatbot-container" class="hidden w-80 h-96 bg-white rounded-lg shadow-xl flex flex-col">
+            <div class="bg-green-500 text-white p-4 rounded-t-lg flex justify-between items-center">
+                <h3 class="font-bold">AI Shopping Assistant</h3>
+                <button id="close-chatbot" class="text-white hover:text-gray-200">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="chat-messages" class="flex-1 p-4 overflow-y-auto">
+                <div class="mb-4">
+                    <div class="bg-gray-100 rounded-lg p-3 max-w-xs">
+                        <p class="text-sm">Hello! How can I help you find the perfect product today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 border-t">
+                <div class="flex">
+                    <input type="text" id="chat-input" placeholder="Ask about our products..." class="flex-1 border rounded-l-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <button id="send-message" class="bg-green-500 text-white px-4 py-2 rounded-r-lg hover:bg-green-600 transition duration-300">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button id="chatbot-toggle" class="bg-green-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition duration-300">
+            <i class="fas fa-robot text-2xl"></i>
+        </button>
+    </div>
+
+    <script>
+        // Chatbot toggle functionality
+        const chatbotToggle = document.getElementById('chatbot-toggle');
+        const chatbotContainer = document.getElementById('chatbot-container');
+        const closeChatbot = document.getElementById('close-chatbot');
+        
+        chatbotToggle.addEventListener('click', () => {
+            chatbotContainer.classList.toggle('hidden');
+        });
+        
+        closeChatbot.addEventListener('click', () => {
+            chatbotContainer.classList.add('hidden');
+        });
+
+        // Simple chatbot functionality
+        const chatInput = document.getElementById('chat-input');
+        const sendMessage = document.getElementById('send-message');
+        const chatMessages = document.getElementById('chat-messages');
+
+        sendMessage.addEventListener('click', () => {
+            const message = chatInput.value.trim();
+            if (message) {
+                // Add user message
+                addMessage(message, 'user');
+                chatInput.value = '';
+                
+                // Simulate AI response
+                setTimeout(() => {
+                    addMessage("I can help you find products based on your preferences. In a full implementation, I would connect to our product database to make recommendations.", 'ai');
+                }, 1000);
+            }
+        });
+
+        function addMessage(text, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('mb-4');
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.classList.add('rounded-lg', 'p-3', 'max-w-xs');
+            
+            if (sender === 'user') {
+                contentDiv.classList.add('bg-green-500', 'text-white', 'ml-auto');
+            } else {
+                contentDiv.classList.add('bg-gray-100');
+            }
+            
+            contentDiv.innerHTML = `<p class="text-sm">${text}</p>`;
+            messageDiv.appendChild(contentDiv);
+            chatMessages.appendChild(messageDiv);
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Affiliate link buttons functionality
+        document.querySelectorAll('.product-card button:not(.fa-heart)').forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (button.textContent.includes('Affiliate Link')) {
+                    alert('Affiliate link copied to clipboard! In a real implementation, this would copy your unique affiliate link.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
